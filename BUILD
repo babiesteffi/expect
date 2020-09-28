@@ -28,3 +28,9 @@ exports_files(["LICENSE"])
 #     name = "buildifier",
 # )
 # copybara:insert_end
+
+cc_library(
+    name = "expect",
+    srcs = ["expect.c"],
+    hdrs = ["expect.h"],
+)
