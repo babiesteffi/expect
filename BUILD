@@ -162,5 +162,5 @@ cc_library(
     ],
     copts = common_copts,
     visibility = ["//visibility:public"],
-    deps = ["@tcl//:main"],
+    deps = ["@com_tcl//:tcl"],
 )
