@@ -37,7 +37,7 @@ filegroup(
     srcs = [
         "pkgIndex.tcl",
         ":expect",
-        ":tcl",
+        "//:tcl",
     ],
 )
 
@@ -112,7 +112,7 @@ cc_binary(
     linkopts = ["-lutil"],  # Needed for openpty().
     deps = [
         ":libexpect",
-        ":tcl",
+        "//:tcl",
     ],
 )
 
@@ -162,5 +162,5 @@ cc_library(
     ],
     copts = common_copts,
     visibility = ["//visibility:public"],
-    deps = [":tcl"],
+    deps = ["//:tcl"],
 )
