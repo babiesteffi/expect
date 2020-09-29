@@ -104,7 +104,7 @@ http_archive(
    urls = ["https://github.com/eigenteam/eigen-git-mirror/archive/3.3.5.tar.gz"],
 )
 
-http_archive(
+new_http_archive(
     name = "tcl",
     build_file_content = all_content,
     urls = ["https://prdownloads.sourceforge.net/tcl/tcl8.6.4-src.tar.gz"],
