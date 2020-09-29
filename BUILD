@@ -14,7 +14,7 @@
 #
 # Supporting infrastructure for implementing and testing PINS.
 
-load("//tools/build_defs/testing:bzl_library.bzl", "bzl_library")
+# load("//tools/build_defs/testing:bzl_library.bzl", "bzl_library")
 
 package(
     default_visibility = ["//visibility:public"],
@@ -161,6 +161,6 @@ cc_library(
         "retoglob.c",
     ],
     copts = common_copts,
-    visibility = ["//visibility:private"],
+    visibility = ["//visibility:public"],
     deps = ["//third_party/tcl_tk:tcl"],
 )
