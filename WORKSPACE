@@ -104,9 +104,8 @@ http_archive(
    urls = ["https://github.com/eigenteam/eigen-git-mirror/archive/3.3.5.tar.gz"],
 )
 
-new_http_archive(
-    name = "tcl",
-    build_file_content = all_content,
-    build_file = "tcl.BUILD",
-    urls = ["https://prdownloads.sourceforge.net/tcl/tcl8.6.4-src.tar.gz"],
+git_repository(
+    name = "com_tcl",
+    remote = "https://github.com/babiesteffi/tcl.git",
+    commit = "773723d814b0d43706ed67d8a4d73f564cabeea2",
 )
